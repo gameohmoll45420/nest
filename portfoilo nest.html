@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #00e1ff;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #000000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .section {
+            padding: 40px 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            border: 2px solid #000; /* กรอบข้อความ */
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .project-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .project-item {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 2px solid #000; /* กรอบรอบโปรเจกต์ */
+            border-radius: 5px;
+        }
+
+        .project-item h3 {
+            margin-top: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid #000; /* กรอบรอบฟอร์ม */
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* กำหนดสีให้กับลิงก์ */
+        .facebook-link {
+            color: #3b5998; /* สีสำหรับ Facebook */
+        }
+
+        .gmail-link {
+            color: #db4437; /* สีสำหรับ Gmail */
+        }
+
+        .instagram-link {
+            color: #e1306c; /* สีสำหรับ Instagram */
+        }
+
+        .facebook-link:hover,
+        .gmail-link:hover, 
+        .instagram-link:hover {
+            text-decoration: underline; /* เพิ่มเส้นใต้เมื่อชี้เมาส์ */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>             นี้คือแฟ้มสะสมผลงานของผมหลายคนอาจจะมีแรงบันดาลใจที่มาจากคนดังต่างๆหรือครีเอทีฟจากโซเชียล 
+                แต่ของผมนั้นมาจากจากแค่รุ่นพี่ในโรงเรียนคนนึงเขานั้นสอนให้ผมรู้จักพวกโค้ดต่างๆ 
+                จากตอนแรกผมคิดว่างานพวกนี้นั้นมันน่าเบื่อ ไม่น่าสนใจ และไม่ค่อยมีช่องทางในการเรียนรู้หรือหาเงินมากนัก 
+                แต่พอผมได้เรียนศึกษาเข้าใจมันแล้วผมก็ได้รู้สึกสนุกขึ้นมาและหลงไหลมัน 
+                ไม่ว่าจะเป็นการสร้างเว็บหรือสร้างเกมต่างๆผมสนุกกับการได้ทดลองต่างๆหรือใส่ความเป็นตัวเองลงไปในนั้น 
+                ผมเป็นคนที่สนุกสนานไม่ว่าจะเป็นเรื่องอะไร ซึ่งการเขียนโค้ดนั้นผมรู้สึกว่าเป็นการใส่ความเป็นตัวเองลงไปได้ในนั้น จนผมเปลี่ยนความคิดจนรักสิ่งนี้ไปเลย
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>ME</h3>
+                    <img src="c:\Users\Notebook\Downloads\nest.jpg" alt="ME" style="max-width:100%; height:auto; display: block; margin: auto;">
+                    <p>Description of ME.</p>
+                </div>
+
+                <div class="project-item">
+                    <h3>Project</h3>
+                    <img src="c:\Users\Notebook\Pictures\ok7.png" alt="Project" style="max-width:100%; height:auto; display: block; margin: auto;">
+                    <p>Description of project.</p>
+                </div>
+
+                <div class="project-item">
+                    <h3>ปพ1 หน้าแรก</h3>
+                    <img src="" alt="ปพ1 หน้าแรก" style="max-width:100%; height:auto; display: block; margin: auto;">
+                    <p>Description of ปพ1 หน้าแรก.</p>
+                </div>
+
+                <div class="project-item">
+                    <h3>ปพ1 หน้าหลัง</h3>
+                    <img src="" alt="ปพ1 หน้าหลัง" style="max-width:100%; height:auto; display: block; margin: auto;">
+                    <p>Description of ปพ1 หน้าหลัง.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Contact Information:</p>
+            <ul style="list-style-type:none; padding:0; text-align:center;">
+                <li><a class="instagram-link" href="https://www.instagram.com/nest.jake/" target="_blank">Instagram</a></li>
+                <li><a class="facebook-link" href="https://www.facebook.com/profile.php?id=61554803305884" target="_blank">Facebook</a></li>
+                <li><a class="gmail-link" href="mailto:pongnarinkotwongtong6387@gmail.com">Gmail</a></li>
+                <li>Phone: 092-783-5965</li>
+            </ul>
+            <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
